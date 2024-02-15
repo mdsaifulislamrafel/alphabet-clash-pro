@@ -40,8 +40,10 @@ function play() {
     hideElementById('home-screen');
     hideElementById('score');
     showElementById('play-ground');
+
     setElementValueById('current-life', 5);
     setElementValueById('current-score', 0);
+    
     continueGame();
 }
 
@@ -53,3 +55,5 @@ function gameOver() {
     const currentAlphabet = getElementById('current-alphabet');
     removeBackgroundById(currentAlphabet);
 }
+
+
